@@ -3,15 +3,30 @@ import time
 import keyboard 
 import random
 
-#sed lyf cant prototype function in python :(
+def main():
+    print('press Q to end the program at any time !!hopefully')
+    time.sleep(5)
+    keyboard.press_and_release('enter')
+    time.sleep(2)
+    keyboard.press_and_release('b')
+    keyboard.press_and_release('o')
+    keyboard.press_and_release('t')
+    keyboard.press_and_release('space')
+    keyboard.press_and_release('o')
+    keyboard.press_and_release('N')
+    keyboard.press_and_release('N')
+    keyboard.press_and_release('enter')
+
+    no_afk()
+    print('fun khatm  :)')
+
 
 def no_afk():
-    print('hello world')
+    # print('hello world')
     time.sleep(2)
-    t_check = time.time() + 10
 
     while True:
-        choice = random.randint(1,7) # 1 to 10
+        choice = random.randint(1,9) # 1 to 10
         sleeptime = random.randint(1,5)
         #sed lyf no switch case :(
         if choice == 1:
@@ -63,6 +78,7 @@ def no_afk():
         # lets have some fun     
         elif choice == 7: #lol
             keyboard.press_and_release('enter')
+            time.sleep(2)
             keyboard.press_and_release('l')
             keyboard.press_and_release('o')
             keyboard.press_and_release('l')
@@ -75,6 +91,7 @@ def no_afk():
 
         elif choice == 8: # afk
             keyboard.press_and_release('enter')
+            time.sleep(2)
             keyboard.press_and_release('a')
             keyboard.press_and_release('f')
             keyboard.press_and_release('k')
@@ -89,20 +106,6 @@ def no_afk():
 # end of afk function 
 
 # ******** Main Function ********** # 
-
+# calling main function
 if __name__ == "__main__":
-    time.sleep(5)
-    keyboard.press_and_release('enter')
-    keyboard.press_and_release('b')
-    keyboard.press_and_release('o')
-    keyboard.press_and_release('t')
-    keyboard.press_and_release('space')
-    keyboard.press_and_release('o')
-    keyboard.press_and_release('N')
-    keyboard.press_and_release('N')
-    keyboard.press_and_release('enter')
-    
-    no_afk()
-    print('\nfun khatm  :(\n')
-
-
+    main()
