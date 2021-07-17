@@ -8,28 +8,45 @@ import random
 def no_afk():
     print('hello world')
     time.sleep(2)
+    t_check = time.time() + 10
 
     while True:
         choice = random.randint(1,7) # 1 to 10
-        sleeptime = random.randint(1,100)
+        sleeptime = random.randint(1,5)
         #sed lyf no switch case :(
         if choice == 1:
             keyboard.press('w')
+            for i in range (5):
+                time.sleep(1)
+                if keyboard.is_pressed('q'):
+                    return
             time.sleep(sleeptime)
             keyboard.release('w')
 
         elif choice == 2:
             keyboard.press('a')
+            for i in range (5):
+                time.sleep(1)
+                if keyboard.is_pressed('q'):
+                    return
             time.sleep(sleeptime)
             keyboard.release('a')
 
         elif choice == 3:
             keyboard.press('s')
+            for i in range (5):
+                time.sleep(1)
+                if keyboard.is_pressed('q'):
+                    return
             time.sleep(sleeptime)
             keyboard.release('s')
 
         elif choice == 4:
             keyboard.press('d')
+            for i in range (5):
+                time.sleep(1)
+                if keyboard.is_pressed('q'):
+                    return
             time.sleep(sleeptime)
             keyboard.release('d')
 
@@ -46,25 +63,46 @@ def no_afk():
         # lets have some fun     
         elif choice == 7: #lol
             keyboard.press_and_release('enter')
-            keyboard.press_and_release('l','o','l','space')
+            keyboard.press_and_release('l')
+            keyboard.press_and_release('o')
+            keyboard.press_and_release('l')
             keyboard.press_and_release('enter')
+            for i in range (5):
+                time.sleep(1)
+                if keyboard.is_pressed('q'):
+                    return
             time.sleep(sleeptime)
 
         elif choice == 8: # afk
             keyboard.press_and_release('enter')
-            keyboard.press_and_release('a','f','k','space')
+            keyboard.press_and_release('a')
+            keyboard.press_and_release('f')
+            keyboard.press_and_release('k')
             keyboard.press_and_release('enter')
+            for i in range (5):
+                time.sleep(1)
+                if keyboard.is_pressed('q'):
+                     return
             time.sleep(sleeptime)
         
-        if keyboard.is_pressed('q'):
-            print('\nfun khatm  :(\n')
-            break
     #end of while loop
 # end of afk function 
 
 # ******** Main Function ********** # 
 
 if __name__ == "__main__":
+    time.sleep(5)
+    keyboard.press_and_release('enter')
+    keyboard.press_and_release('b')
+    keyboard.press_and_release('o')
+    keyboard.press_and_release('t')
+    keyboard.press_and_release('space')
+    keyboard.press_and_release('o')
+    keyboard.press_and_release('N')
+    keyboard.press_and_release('N')
+    keyboard.press_and_release('enter')
+    
     no_afk()
+    print('\nfun khatm  :(\n')
 
 

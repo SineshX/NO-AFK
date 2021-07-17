@@ -10,3 +10,10 @@ create a bot for no afk for valorant :)
 // special key binding 
 // startup with valo tag :)
 // auto afk detect :) danger zone for campers 
+
+
+error log :)
+ keyboard.press('R','a','m')
+TypeError: press() takes 1 positional argument but 3 were given
+
+2
