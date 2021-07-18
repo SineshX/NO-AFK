@@ -3,6 +3,8 @@ import time
 import keyboard 
 import random
 
+from pyautogui import scroll
+
 def main():
     print('press Q to end the program at any time !!hopefully')
     # todo : focus on valorant window
@@ -102,6 +104,9 @@ def no_afk():
                 if keyboard.is_pressed('q'):
                      return
             time.sleep(sleeptime)
+        
+        
+
         
     #end of while loop
 # end of afk function 

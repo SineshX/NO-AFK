@@ -26,4 +26,12 @@ error log :)
  keyboard.press('R','a','m')
 TypeError: press() takes 1 positional argument but 3 were given
 
-2
+# working with py autogui 
+ list = pyautogui.getWindowsWithTitle('VALORANT')
+>>> list
+[Win32Window(hWnd=263294)]
+>>> valorant = list[0]
+>>> #check the len of string :)
+>>> valorant
+Win32Window(hWnd=263294)
+>>> time.sleep(5);valorant.restore()
