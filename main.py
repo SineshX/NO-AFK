@@ -1,4 +1,5 @@
 from time import sleep
+from sys import exit
 import keyboard 
 import random
 import pyautogui 
