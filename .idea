@@ -2,9 +2,19 @@ create a bot for no afk for valorant :)
 // random key input 
 // write lol/ afk in chat (enter + key)
 
+todo : pip install pywin32
+// win32 has api calls for windows : it will  be easier for .exe compilation 
+
+pip install py2exe
+// i think it was old 
+
+// now installing :
+pip install auto-py-to-exe
 
 
 # uture work that might nnot be done  :(
+// focus on valorant.exe : ( if running )
+// GUI for custom chat inputs :)
 // make ML model with my mode
 // make exe for noobs 
 // special key binding 

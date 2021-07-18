@@ -5,6 +5,7 @@ import random
 
 def main():
     print('press Q to end the program at any time !!hopefully')
+    # todo : focus on valorant window
     time.sleep(5)
     keyboard.press_and_release('enter')
     time.sleep(2)
@@ -19,7 +20,7 @@ def main():
 
     no_afk()
     print('fun khatm  :)')
-
+# end of main function
 
 def no_afk():
     # print('hello world')
