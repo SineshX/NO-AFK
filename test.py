@@ -2,7 +2,7 @@ import keyboard
 from time import sleep
 from sys import exit
 import pyautogui
-import win32gui
+# import win32gui
 #todo : focus on valo in try block except exit with statement
 # if screen pr sc match of some element
 
