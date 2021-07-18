@@ -20,6 +20,7 @@ def main():
         # thinking...
 
     print('\n       THATS DONE!!    ')
+
 # end of main function
 
 def focusOnValorant():
@@ -38,6 +39,7 @@ def focusOnValorant():
         if valorant.isMinimized == True:
             valorant.restore() #run
             chat()
+# end of focus function 
 
 def chat():
     sleep(3)
