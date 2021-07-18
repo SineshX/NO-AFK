@@ -11,6 +11,7 @@
 2) ``` pip install pyautogui,keyboard ```
 3) ``` python main.py ```
 4) test video 1 : https://youtu.be/_4jDhEqCZI4
+5) anti-ban formula : try playing with a team member jo aapko report na kre 😉
 
 # todo :
 
