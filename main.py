@@ -1,5 +1,5 @@
 from time import sleep
-from sys import exit
+import sys
 import keyboard 
 import random
 import pyautogui 
@@ -34,7 +34,7 @@ def focusOnValorant():
         for i in range(4): #lol
             sleep(1)
             print('. ',end='')
-        exit(0)
+        sys.exit()
     else: 
         valorant = list[0]
         if valorant.isMinimized == True:
