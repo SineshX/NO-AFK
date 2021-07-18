@@ -28,6 +28,7 @@
 * [ ] special key binding
 * [ ] start with valo samall icon on somewhere
 * [ ] auto afk detect :) danger zone for campers
+* [ ] itni dur aa gaye ho to fork/star/kisi feature me help kr do saar :)
 
 # End
 
