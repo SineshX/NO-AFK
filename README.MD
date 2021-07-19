@@ -7,9 +7,9 @@
 
 # to run :
 
-1) install Python 
-2) ``` pip install pyautogui,keyboard ```
-3) ``` python main.py ```
+1) install Python
+2) ```pip install pyautogui,keyboard```
+3) ```python main.py```
 4) test video 1 : https://youtu.be/_4jDhEqCZI4
 5) anti-ban formula : try playing with a team member jo aapko report na kre 😉
 
@@ -51,3 +51,5 @@ now only trash below ..
 > im.save()
 
 ### maja aa gaya bidu :)
+
+fun fact : I'm noob in python and valo ![😅](https://static.xx.fbcdn.net/images/emoji.php/v9/tac/1.5/16/1f605.png)
