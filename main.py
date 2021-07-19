@@ -4,13 +4,13 @@ import keyboard
 import random
 import pyautogui 
 import threading
+
+
 def main():
 
     print('\nTo end the program : press Q for 3 sec')
-    # print('\nTo end the program : press Q while bot is moving !!hopefully')
     print(' Starting bot in 5 sec ',end='')
-    for i in range(4): #lol
-        sleep(1)
+    sleep(4) # lol
 
     # check if valorant is active than run
     try:
