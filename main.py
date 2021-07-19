@@ -3,19 +3,31 @@ import sys
 import keyboard 
 import random
 import pyautogui 
+import threading
+
 
 def main():
 
     print('\nTo end the program : press Q for 3 sec')
-    # print('\nTo end the program : press Q while bot is moving !!hopefully')
     print(' Starting bot in 5 sec ',end='')
-    for i in range(4): #lol
-        sleep(1)
-        print('. ',end='')
+    sleep(4) # lol
+
     # check if valorant is active than run
     try:
         focusOnValorant()
-        no_afk()
+        # came here means valo is active and chat_afk() function executed
+        global bot_flag 
+        bot_flag = True # will be used to terminate the bot / thread
+        # creating thread || yes u can pass function XD
+        t1 = threading.Thread(target = no_afk ) 
+        # starting thread || calling no_afk in parallel
+        t1.start()
+        while bot_flag == True:
+            sleep(3)
+            if keyboard.is_pressed('q'):
+                bot_flag = False
+                return
+        # end of try block        
     except:
         print()
         # thinking...
@@ -39,59 +51,43 @@ def focusOnValorant():
         valorant = list[0]
         if valorant.isMinimized == True:
             valorant.restore() #run
-            chat()
+            chat_afk()
 # end of focus function 
 
-def chat():
-    sleep(3)
+def chat_afk():
+    sleep(0.5)
     keyboard.press_and_release('enter')
-    sleep(2)
-    pyautogui.typewrite('Im going AFK , myBot oNN :)')
     sleep(1)
+    pyautogui.typewrite('Im going AFK , myBot oNN :)')
+    sleep(0.5)
     keyboard.press_and_release('enter')
 # end of chat function
 
 def no_afk():
     # print('hello world')
     sleep(0.5)
-    while True:
+    while bot_flag == True:
         choice = random.randint(1,10) # 1 to 10
-        sleeptime = random.randint(1,5)
+        sleeptime = random.randint(1,15)
         #sed lyf no switch case :(
         # W
         if choice == 1:
             keyboard.press('w')
-            for i in range (5):
-                sleep(1)
-                if keyboard.is_pressed('q'):
-                    return
             sleep(sleeptime)
             keyboard.release('w')
         # A
         elif choice == 2:
             keyboard.press('a')
-            for i in range (5):
-                sleep(1)
-                if keyboard.is_pressed('q'):
-                    return
             sleep(sleeptime)
             keyboard.release('a')
         # S
         elif choice == 3:
             keyboard.press('s')
-            for i in range (5):
-                sleep(1)
-                if keyboard.is_pressed('q'):
-                    return
             sleep(sleeptime)
             keyboard.release('s')
         # D
         elif choice == 4:
             keyboard.press('d')
-            for i in range (5):
-                sleep(1)
-                if keyboard.is_pressed('q'):
-                    return
             sleep(sleeptime)
             keyboard.release('d')
         # jump
@@ -113,11 +109,7 @@ def no_afk():
             pyautogui.typewrite(' LOL :)')
             sleep(2)
             keyboard.press_and_release('enter')
-            for i in range (5):
-                sleep(1)
-                if keyboard.is_pressed('q'):
-                    return
-            sleep(sleeptime)
+            # sleep(sleeptime)
         # afk 
         elif choice == 8: 
             keyboard.press_and_release('enter')
@@ -125,10 +117,6 @@ def no_afk():
             pyautogui.typewrite('Sorry boiz Im AFK')
             sleep(1)
             keyboard.press_and_release('enter')
-            for i in range (5):
-                sleep(1)
-                if keyboard.is_pressed('q'):
-                     return
             sleep(sleeptime)
         # 9) buy gun
         # 10) do something    
