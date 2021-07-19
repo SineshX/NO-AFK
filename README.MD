@@ -10,8 +10,8 @@
 1) install Python
 2) ```pip install pyautogui,keyboard```
 3) ```python main.py```
-4) test video 1 : https://youtu.be/_4jDhEqCZI4
-5) anti-ban formula : try playing with a team member jo aapko report na kre 😉
+4) test video 1 (watch my bot die XD): https://youtu.be/35IWyJW0BBk
+5) anti-ban formula : try playing with a team member jo aapko report na kare 😉
 
 # todo :
 
@@ -50,6 +50,20 @@ now only trash below ..
 > later work for gun buying etc with image and mouse :)
 > im.save()
 
+# Working with threads: 
+    ```
+    global bot_flag 
+    bot_flag = True # will be used to terminate the bot / thread
+    # creating thread || yes u can pass function XD
+    t1 = threading.Thread(target = no_afk ) 
+    # starting thread || calling no_afk in parallel
+    t1.start()
+    while bot_flag == True:
+        sleep(3)
+        if keyboard.is_pressed('q'):
+            bot_flag = False
+            return
+    ```
 ### maja aa gaya bidu :)
 
 fun fact : I'm noob in python and valo ![😅](https://static.xx.fbcdn.net/images/emoji.php/v9/tac/1.5/16/1f605.png)

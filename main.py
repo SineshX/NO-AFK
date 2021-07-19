@@ -9,7 +9,8 @@ import threading
 def main():
 
     print('\nTo end the program : press Q for 3 sec')
-    print(' Starting bot in 5 sec ',end='')
+    print(' Starting bot in 5 sec ')
+    print()
     sleep(4) # lol
 
     # check if valorant is active than run
