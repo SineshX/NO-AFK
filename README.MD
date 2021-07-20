@@ -1,4 +1,4 @@
-# create a no-afk bot for valorant :)
+# A no-afk bot for valorant :)
 
 ## current features :
 
@@ -36,22 +36,27 @@
 now only trash below ..
 
 # working with pyautogui
+<pre lang="python"><code>
 
-> list = pyautogui.getWindowsWithTitle('VALORANT')
-> list
-> [Win32Window(hWnd=263294)]
-> valorant = list[0]
-> valorant
-> Win32Window(hWnd=263294)
-> valorant.restore()
-> : "D:\Games\Riot Games\Riot Client\RiotClientServices.exe" --launch-product=valorant --launch-patchline=live
-> pyautogui.scroll(200)
-> im = pyautogui.screenshot()
-> later work for gun buying etc with image and mouse :)
-> im.save()
+list = pyautogui.getWindowsWithTitle('VALORANT')
+list
+[Win32Window(hWnd=263294)]
+valorant = list[0]
+valorant
+Win32Window(hWnd=263294)
+valorant.restore()
+#"D:\Games\Riot Games\Riot Client\RiotClientServices.exe" --launch-product=valorant --launch-patchline=live
+pyautogui.scroll(200)
+im = pyautogui.screenshot()
+later work for gun buying etc with image and mouse :)
+im.save()
+
+</code></pre>
 
 # Working with threads: 
-    ```
+
+<pre lang="python"><code>
+
     global bot_flag 
     bot_flag = True # will be used to terminate the bot / thread
     # creating thread || yes u can pass function XD
@@ -63,7 +68,8 @@ now only trash below ..
         if keyboard.is_pressed('q'):
             bot_flag = False
             return
-    ```
+            
+</code></pre>
 ### maja aa gaya bidu :)
 
 fun fact : I'm noob in python and valo ![😅](https://static.xx.fbcdn.net/images/emoji.php/v9/tac/1.5/16/1f605.png)
