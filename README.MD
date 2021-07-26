@@ -10,15 +10,15 @@
 1) install Python
 2) ```pip install pyautogui,keyboard```
 3) ```python main.py```
-4) test video 1 (watch my bot die XD): https://youtu.be/35IWyJW0BBk
-5) anti-ban formula : try playing with a team member jo aapko report na kare 😉
+4) test video 2 (watch my bot die XD): https://youtu.be/35IWyJW0BBk (1min vid)
+5) anti-ban formula : try playing with a friend
 
 # todo :
 
 * [ ] pip install auto-py-to-exe
 * [ ] and convert into exe
 
-# future work that might not be done :_:
+# future work :_:
 
 * [X] focus on valorant.exe : ( if running ) //done
 * [ ] agent select using pyautogui
@@ -29,7 +29,6 @@
 * [ ] special key binding
 * [ ] start with valo samall icon on somewhere
 * [ ] auto afk detect :) danger zone for campers
-* [ ] itni dur aa gaye ho to fork/star/kisi feature me help kr do saar :)
 
 # End
 
@@ -70,6 +69,18 @@ im.save()
             return
             
 </code></pre>
+
+# try except in while loop
+
+<pre lang="python"><code>
+
+    try:
+        #something
+    except KeyboardInterrupt:
+        sys.exit(0)
+     # did not worled : was not able to focus on the valorant window       
+</code></pre>
 ### maja aa gaya bidu :)
 
 fun fact : I'm noob in python and valo ![😅](https://static.xx.fbcdn.net/images/emoji.php/v9/tac/1.5/16/1f605.png)
+<!--  I did it for fun project-->
