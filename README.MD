@@ -1,4 +1,4 @@
-# A no-afk bot for valorant :)
+# An Anti-afk bot for valorant :)
 
 ## current features :
 
