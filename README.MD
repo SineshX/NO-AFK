@@ -13,19 +13,19 @@
 4) test video 2 (watch my bot die XD): https://youtu.be/35IWyJW0BBk (1min vid)
 5) anti-ban formula : try playing with a friend
 
-# todo :
-
-* [ ] pip install auto-py-to-exe
-* [ ] and convert into exe
-
-# future work :_:
+# You can contribute :) and help me out with   :
 
 * [X] focus on valorant.exe : ( if running ) //done
+* [ ] Buy Guns for teammates 
+
+
 * [ ] agent select using pyautogui
 * [ ] remove keyboard module and use pyautogui only
 * [ ] GUI for custom chat inputs :)
 * [ ] make ML model with my mode
 * [ ] make exe for noobs
+    * pip install auto-py-to-exe
+    * and convert into exe
 * [ ] special key binding
 * [ ] start with valo samall icon on somewhere
 * [ ] auto afk detect :) danger zone for campers
