@@ -8,10 +8,17 @@
 # to run :
 
 1) install Python
-2) ```pip install pyautogui,keyboard```
-3) ```python main.py```
-4) test video 2 (watch my bot die XD): https://youtu.be/35IWyJW0BBk (1min vid)
-5) anti-ban formula : try playing with a friend
+make sure you have python installed , by command : ```python --version``` in terminal (or command prompt)
+later on run these command separately.
+
+python3 -m pip install pyautogui
+python3 -m pip install keyboard
+2) ```python3 -m pip install pyautogui```
+3) ```python3 -m pip install keyboard```
+4) TO run the bot " ```python3 main.py```
+or watch the video :)
+5) test video 2 (watch my bot die XD): https://youtu.be/35IWyJW0BBk (1min vid)
+6) anti-ban formula : try playing with a friend
 
 # You can contribute :) and help me out with   :
 
